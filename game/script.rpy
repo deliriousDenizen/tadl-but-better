@@ -83,6 +83,7 @@ image chap2 = "chap2.png"
 image fan = "wow.png"
 image airfryer = "airfryer.png"
 image airfryer_rage = "airfryerpurple.png"
+image eternus = "eternus.png"
 
 default gen1 = False
 default dpoints = False
@@ -138,7 +139,10 @@ define q = Character("???",
 
 define Airfryer = Character("Airfryer",
                     who_color="#000000", callback = callback)
-                    
+
+define Eternus = Character("Eternus"
+                    who_color="#c1dced", callback = callback)
+
 define config.autosave_frequency = 10
 
 label splashscreen:
@@ -238,8 +242,7 @@ if name == "Gogy" or name == "gogy":
     $ renpy.quit()
 
 if name == "CD" or name == "cd":
-    Lay "Cracker balls"
-    $ renpy.quit()
+    Lay "balls"
 
 if name == "Cloud" or name == "cloud":
     Lay "I hate women."
@@ -248,8 +251,67 @@ if name == "Sour" or name == "sour":
     Lay "sour here you cant take that name thats mine twat"
 
 if name == "gaster" or name == "Gaster":
-     Lay "=)"
-     $ renpy.quit()
+    Lay "=)"
+    $ renpy.quit()
+
+if name == "deldenzen" or name == "del" or name == "Del" or name == "Deldenzen":
+    Lay "lmao ok"
+
+if name == "eternus" or name == "Eternus":
+    Lay "who"
+
+if name == "duck" or name == "Duck" or name == "duckiscool" or name == "Duckiscool":
+    show layangry
+    lay "filthy new jersey scum"
+
+if name == "airfried" or name == "Airfried":
+    show layangry
+    lay "FILTHY NIGGER EWWW NIGGER ALERT!!!!"
+
+if name == "Niko" or name == "niko":
+    show layeyesclosed
+    lay "irrelevant."
+
+if name == "Kanatan" or name == "kanatan" or name == "Toro" or name == "toro":
+    show layeyesclosed
+    lay "irrelevant."
+
+if name == "Kenny" or name == "kenny":
+    show layeyesclosed
+    lay "get the bag girl"
+
+if name == "A1" or name == "a1":
+    show layangry
+    lay "former lstanberg moderator!!!! laugh and point!!!"
+
+if name == "lepredo" or name == "LePredo":
+    show layangry
+    lay "former lstanberg moderator!!!! laugh and point!!!"
+
+if name == "sky" or name == "Sky" or name == "skyseemssilent" or name == "Skyseemssilent":
+    show layeyesclosed
+    lay "irrelevant."
+
+if name == "AllyKat" or name == "allykat" or name == "ally" or name == "Ally":
+    hide laynormal
+    show avehap
+    average "thanks for the admin"
+
+if name == "kosma" or name == "Kosma":
+    show layeyesclosed
+    lay "something something csgo something something abusive lmao"
+
+if name == "Texas" or name == "texas":
+    lay "texsex"
+
+if name == "jfify" or name == "Jfify":
+    show layangry
+    lay "ur unfunny"
+    $ renpy.quit()
+
+if name == "rnexus" or name == "nexus":
+    show layeyesclosed
+    lay "irrelevant now since u left berg."
 
 else:
     show laysmile
