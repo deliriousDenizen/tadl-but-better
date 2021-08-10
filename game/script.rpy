@@ -1,5 +1,6 @@
 ﻿image bg starboard = "bg starboard.png"
 image bg townsquare = "bg townsquare.png"
+image movie = Movie(xpos=0, ypos=0, delay=11)
 image laynormal = "Lay1.png"
 image laytalk = "Lay2.png"
 image layangry = "Lay3.png"
@@ -78,21 +79,22 @@ image over = "over.png"
 image polo = "bg polo.png"
 image polon = "bg polon.png"
 image lads = "bg lads.png"
-image movie = Movie(xpos=0, ypos=0, delay=11)
 image chap2 = "chap2.png"
 image fan = "wow.png"
-
-
+image airfryer =
+image airfryer_rage
 
 default gen1 = False
 default dpoints = False
 default lpoints = False
 default trollars =True
 default menuset = set()
+
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
+
 define Lay = Character("Lay",
-                     who_color="#99C7E5" , callback = callback)
+                    who_color="#99C7E5", callback = callback)
 
 define F = Character("Sun",
                     who_color="#F7DB97", callback = callback)
@@ -119,13 +121,11 @@ define Sour = Character("Sour",
 define Swep = Character("Swep",
                     who_color="#EDC3FD", callback = callback)
 
-
 define Average = Character("Average",
                     who_color="#ACE599", callback = callback)
 
 define FBI = Character("FBI",
                     who_color="#99E09F", callback = callback)
-
 
 define T = Character("T",
                     who_color="#581845", callback = callback)
@@ -138,8 +138,6 @@ define q = Character("???",
 
 define config.autosave_frequency = 10
 
-
-
 label splashscreen:
  scene black
 with Pause (1)
@@ -149,8 +147,6 @@ with Pause(2)
 hide splashscreen with dissolve
 
 return
-
-
 
 label start:
     $ trollars = 0
@@ -175,7 +171,6 @@ label start:
 
 stop music fadeout 2.0
 
-
 ### intro done basedddddd okkk time to work on the sprites or some shit
 
 label background:
@@ -194,7 +189,7 @@ with dissolve
 with zoomin
 show laytalk
 q "You seem new?"
-q  "What's your name??"
+q  "What's your name?"
 
 python:
 
@@ -207,12 +202,9 @@ python:
 if name == "rnexus" or name == "Rnexus":
     Lay "Lol stupid!!111"
 
-
-
 if name == "cary" or name == "Cary":
     Lay "wtf cary!?!?!?!?!???!!!!"
     Lay "Adobe Flash CS6 Cracked Free 2020 Google Drive.rar"
-
 
 if name == "Crin" or name == "crin":
     Lay "Oh hi crin :)"
@@ -234,12 +226,9 @@ if name == "Texas":
     $ renpy.quit()
 
 if name == "Dream" or name == "dream" or name == "Dreamwastaken" or name == "dreamwastaken":
-     #python:
-       # try: sys.modules['renpy.error'].report_exception("LOL, GET FUCKED! Man, I used to be such a big fan of you dream. Why are you so scared to call out your fans. Stop hiding behind 'Its only a small perrcentage of my community. Fuck off. Choose a new name.", False)
-       #except: pass
-      $ _skipping = False
-      $ renpy.movie_cutscene("dream_fight_HD.ogv")
-      $ renpy.quit()
+    $ _skipping = False
+    $ renpy.movie_cutscene("dream_fight_HD.ogv")
+    $ renpy.quit()
 
 if name == "Gogy" or name == "gogy":
     Lay "Disgusting"
@@ -254,7 +243,6 @@ if name == "Cloud" or name == "cloud":
 
 if name == "Sour" or name == "sour":
     Lay "sour here you cant take that name thats mine twat"
-
 
 if name == "gaster" or name == "Gaster":
      Lay "=)"
@@ -305,7 +293,7 @@ show laysmile
 with dissolve
 Lay "Beautiful, isn't it?"
 Lay "Average was so happy when it was installed."
-Lay "It's the town's pride and joy. "
+Lay "It's the town's pride and joy."
 show laynormal
 
 call screen flower
