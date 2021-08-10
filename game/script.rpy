@@ -81,8 +81,8 @@ image polon = "bg polon.png"
 image lads = "bg lads.png"
 image chap2 = "chap2.png"
 image fan = "wow.png"
-image airfryer =
-image airfryer_rage
+image airfryer = "airfryer.png"
+image airfryer_rage = "airfryerpurple.png"
 
 default gen1 = False
 default dpoints = False
@@ -136,6 +136,9 @@ define You = Character("You",
 define q = Character("???",
                     who_color="#ffffff", callback = callback)
 
+define Airfryer = Character("Airfryer",
+                    who_color="#000000", callback = callback)
+                    
 define config.autosave_frequency = 10
 
 label splashscreen:
