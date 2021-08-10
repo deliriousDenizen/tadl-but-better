@@ -140,7 +140,7 @@ define q = Character("???",
 define Airfryer = Character("Airfryer",
                     who_color="#000000", callback = callback)
 
-define Eternus = Character("Eternus"
+define Eternus = Character("Eternus",
                     who_color="#c1dced", callback = callback)
 
 define config.autosave_frequency = 10
@@ -262,51 +262,51 @@ if name == "eternus" or name == "Eternus":
 
 if name == "duck" or name == "Duck" or name == "duckiscool" or name == "Duckiscool":
     show layangry
-    lay "filthy new jersey scum"
+    Lay "filthy new jersey scum"
 
 if name == "airfried" or name == "Airfried":
     show layangry
-    lay "FILTHY NIGGER EWWW NIGGER ALERT!!!!"
+    Lay "FILTHY NIGGER EWWW NIGGER ALERT!!!!"
 
 if name == "Niko" or name == "niko":
     show layeyesclosed
-    lay "irrelevant."
+    Lay "irrelevant."
 
 if name == "Kanatan" or name == "kanatan" or name == "Toro" or name == "toro":
     show layeyesclosed
-    lay "irrelevant."
+    Lay "irrelevant."
 
 if name == "Kenny" or name == "kenny":
     show layeyesclosed
-    lay "get the bag girl"
+    Lay "get the bag girl"
 
 if name == "A1" or name == "a1":
     show layangry
-    lay "former lstanberg moderator!!!! laugh and point!!!"
+    Lay "former lstanberg moderator!!!! laugh and point!!!"
 
 if name == "lepredo" or name == "LePredo":
     show layangry
-    lay "former lstanberg moderator!!!! laugh and point!!!"
+    Lay "former lstanberg moderator!!!! laugh and point!!!"
 
 if name == "sky" or name == "Sky" or name == "skyseemssilent" or name == "Skyseemssilent":
     show layeyesclosed
-    lay "irrelevant."
+    Lay "irrelevant."
 
 if name == "AllyKat" or name == "allykat" or name == "ally" or name == "Ally":
     hide laynormal
     show avehap
-    average "thanks for the admin"
+    Average "thanks for the admin"
 
 if name == "kosma" or name == "Kosma":
     show layeyesclosed
-    lay "something something csgo something something abusive lmao"
+    Lay "something something csgo something something abusive lmao"
 
 if name == "Texas" or name == "texas":
-    lay "texsex"
+    Lay "texsex"
 
 if name == "jfify" or name == "Jfify":
     show layangry
-    lay "ur unfunny"
+    Lay "ur unfunny"
     $ renpy.quit()
 
 if name == "rnexus" or name == "nexus":
