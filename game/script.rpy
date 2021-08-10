@@ -233,7 +233,6 @@ if name == "Kosma":
 if name == "Texas":
     $ renpy.quit()
 
-
 if name == "Dream" or name == "dream" or name == "Dreamwastaken" or name == "dreamwastaken":
      #python:
        # try: sys.modules['renpy.error'].report_exception("LOL, GET FUCKED! Man, I used to be such a big fan of you dream. Why are you so scared to call out your fans. Stop hiding behind 'Its only a small perrcentage of my community. Fuck off. Choose a new name.", False)
@@ -242,13 +241,9 @@ if name == "Dream" or name == "dream" or name == "Dreamwastaken" or name == "dre
       $ renpy.movie_cutscene("dream_fight_HD.ogv")
       $ renpy.quit()
 
-
-
-
 if name == "Gogy" or name == "gogy":
     Lay "Disgusting"
     $ renpy.quit()
-
 
 if name == "CD" or name == "cd":
     Lay "Cracker balls"
@@ -265,12 +260,8 @@ if name == "gaster" or name == "Gaster":
      Lay "=)"
      $ renpy.quit()
 
-
-
 else:
-
     show laysmile
-
     Lay "Nice to meet ya [name], my name is Lay!"
     # bro
     show laynormal
@@ -298,7 +289,6 @@ label after_menu:
   show laynormal
   "Lay grabs you by the arm and starts dragging you with her."
 
-
 label lstanberg:
 with dissolve
 scene black
@@ -318,13 +308,11 @@ Lay "Average was so happy when it was installed."
 Lay "It's the town's pride and joy. "
 show laynormal
 
-
 call screen flower
 with dissolve
 
 label funny:
 "What a funny looking sun."
-
 
 F "fucking idiots."
 
@@ -335,15 +323,8 @@ show laytalk
 Lay "Don't mind him."
 Lay "He always comes, starts shit and then disappears. Fucking coward."
 
-
-
 show laysmile
-
-
-
-
 Lay "Anyways where do you want to go next?"
-
 
 menu:
     set menuset
@@ -356,21 +337,12 @@ menu:
         Lay "Oh boy, my favourite place..."
         jump general1
 
-
-
-
-
     "General-2":
         hide laytalk
         hide laysmile
         show laynormal
         Lay "Not many people go here actually, but I'll still show you."
         jump general2
-
-
-
-
-
 
     "Lstanberg Art Department":
         hide laytalk
@@ -379,19 +351,12 @@ menu:
         Lay "I love this place come on!"
         jump art
 
-
-
     "Can I leave instead?":
         hide laytalk
         hide laysmile
         show layangry
         Lay "Shit yourself!!"
-
         $ renpy.quit
-
-
-
-
 
 ## image button innit lmao
 screen flower:
@@ -440,11 +405,9 @@ hide dubsmug
 show cloudeyesclosed
 Cloud "Hngh, he's getting on my nerves. Hey [name], whose opinion do you think is better?"
 
-
 menu:
     set menuset
     "What clan are you willing to join?"
-
 
     "I love women.":
         hide cloudeyesclosed
@@ -526,10 +489,8 @@ if name == "Marcel":
 
 else:
 
-
     Dico "The only way it could possibly get any worse is if Marcel was here,"
     Dico "and he’s probably playing some furry game or something right now."
-
 
 show dicohappy
 Dico "Oh, sorry, I’m rambling again, I’ll go deal with them, see ya!"
@@ -551,19 +512,7 @@ menu:
         Lay "I'm so excited!"
         jump art
 
-
-
-
-
-
-
 return
-
-
-
-
-
-
 
 label general2:
 stop music fadeout 1.0
@@ -575,7 +524,6 @@ scene black
 "Or when you saw a man dressed in a Megaman costume running around with bread in his mouth."
 "Or the time you saw a \"Gangster\" screaming Bonk clan when you where passing the L'stanberg Art department."
 "This city was truly cursed."
-
 
 show laynormal
 Lay "We're here!"
@@ -602,12 +550,7 @@ Lay "Come on lets go.."
 Lay "This place just makes me sad."
 jump verfi
 
-
-
-
-
 return
-
 
 label art:
 stop music fadeout 1.0
@@ -653,8 +596,6 @@ hide laytalk
 
 jump general2
 return
-
-
 
 jump art
 
@@ -795,7 +736,6 @@ menu What:
         show over
         "{color=#ACE599}You just gained A Dico Relationship Point!{/color}"
 
-
     "Oh, for fuck sakes":
         You "Oh, for fuck sakes, why do you have to come?"
         $ dpoints = True
@@ -859,18 +799,12 @@ menu:
         "You leave the book on the floor, leaving it for the next unlucky person to stumble upon this abomination."
 hide fan with dissolve
     
-
-
-
 # break this is where cutscene happen :D
-
-
 
 show dicohappy 
 Dico "Oh OH! I know where we should go next!! Serious-General!"
 You "Where's that?"
 Dico "Come on, we'll show you!"
-
 
 scene bg lads with dissolve 
 
@@ -884,7 +818,6 @@ else:
     
 Lay "Have I told you how cool and handsome cabbage is?"
 Lay "JK I HATE HIM HE STINKS!!!"
-        
 
 
 
